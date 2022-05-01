@@ -52,12 +52,18 @@ Confirmamos o delete.
 #### A segunda forma seguimos os seguintes passo
 
 AWS configure
+
 AWS sqs create-queue --queue-name="fila-lucas" --region=us-east-1
+
 AWS sqs list-queues # retorna filas existentes
+
 AWS sqs send-message --message-body="Teste" --queue-url=https://sqs.us-east-1.amazonaws.com/839389132124/fila-lucas 
+
 aws sqs receive-message --queue-url=https://sqs.us-east-1.amazonaws.com/839389132124/fila-lucas
 aws sqs receive-message --queue-url=https://sqs.us-east-1.amazonaws.com/839389132124/fila-lucas --wait-time-seconds=20 # Long Polling economiza request
+
 AWS sqs delete-message --queue-url=https://sqs.us-east-1.amazonaws.com/839389132124/fila-lucas  --receipt-handle=aqui vai o especifico receipt handle da mensagem
+
 AWS sqs delete-queue --queue-url=https://sqs.us-east-1.amazonaws.com/839389132124/fila-lucas 
 
 ### Depois rode os comandos
