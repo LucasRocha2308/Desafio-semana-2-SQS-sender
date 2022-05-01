@@ -4,6 +4,10 @@
 
 O projeto consiste em enviar mensagens customizadas, seguindo um modelo de Fila Standard do serviço de SQS da AWS.
 
+## Link para o consumer da aplicação
+
+https://github.com/LucasRocha2308/Desafio-semana-2-SQS-consomer/tree/main
+
 ## Para criar a aplicação
 
 mvn archetype:generate -DgroupId=br.com.sqs_consomer -DartifactId=sqs_consomer -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
@@ -49,7 +53,9 @@ Marcamos o check da mensagem desejada;
 Clicamos em delete;
 Confirmamos o delete.
 
-#### A segunda forma seguimos os seguintes passo
+#### A segunda forma com AWS CLI devemos seguir  os passos:
+
+obs: para usar o AWS CLI é necessario a sua instalação
 
 AWS configure
 
