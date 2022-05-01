@@ -10,7 +10,7 @@ https://github.com/LucasRocha2308/Desafio-semana-2-SQS-consomer/tree/main
 
 ## Para criar a aplicação
 
-mvn archetype:generate -DgroupId=br.com.sqs_consomer -DartifactId=sqs_consomer -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+mvn archetype:generate -DgroupId=br.com.sqs_sender -DartifactId=sqs_sender -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 
 ## Para rodar a aplicação
 
