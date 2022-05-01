@@ -4,9 +4,13 @@
 
 O projeto consiste em enviar mensagens customizadas, seguindo um modelo de Fila Standard do serviço de SQS da AWS.
 
-## Link para o consumer da aplicação
+## Link para o consomer da aplicação
 
 https://github.com/LucasRocha2308/Desafio-semana-2-SQS-consomer/tree/main
+
+## Link para os projetos sender e consomer 
+
+https://github.com/LucasRocha2308/Segundo-desafio-Ilab
 
 ## Para criar a aplicação
 
@@ -66,6 +70,7 @@ AWS sqs list-queues # retorna filas existentes
 AWS sqs send-message --message-body="Teste" --queue-url=https://sqs.us-east-1.amazonaws.com/839389132124/fila-lucas 
 
 aws sqs receive-message --queue-url=https://sqs.us-east-1.amazonaws.com/839389132124/fila-lucas
+
 aws sqs receive-message --queue-url=https://sqs.us-east-1.amazonaws.com/839389132124/fila-lucas --wait-time-seconds=20 # Long Polling economiza request
 
 AWS sqs delete-message --queue-url=https://sqs.us-east-1.amazonaws.com/839389132124/fila-lucas  --receipt-handle=aqui vai o especifico receipt handle da mensagem
@@ -75,5 +80,6 @@ AWS sqs delete-queue --queue-url=https://sqs.us-east-1.amazonaws.com/83938913212
 ### Depois rode os comandos
 
 ./build.sh
+
 ./start.sh
 
