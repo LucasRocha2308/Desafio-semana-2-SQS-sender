@@ -4,7 +4,7 @@
 
 O projeto consiste em enviar mensagens customizadas, seguindo um modelo de Fila Standard do serviço de SQS da AWS.
 
-## Link para o consomer da aplicação
+## Link para o consumer da aplicação
 
 https://github.com/LucasRocha2308/Desafio-semana-2-SQS-consumer/tree/main
 
